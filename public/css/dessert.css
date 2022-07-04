@@ -54,10 +54,15 @@ header> nav > ul > li > a{
     width: calc(100% / var(--num) - 30px);
     margin: 0px 15px 40px 15px;
 }
-
-
-
-
+#center{
+align-items: center;
+}
+.container-1000{
+    margin-top: 100px;
+}
+.container-1000 p{
+    margin-top: 20px;
+}
 
   footer {
     margin-top: 100px;
@@ -77,3 +82,122 @@ header> nav > ul > li > a{
     text-decoration: none;
     color: rgb(255, 255, 255);
   }
+
+
+  /* //////////////////////// */
+/* 不同裝置 */
+/* //////////////////////// */
+
+@media (min-width: 1200px) {
+    header {
+        position: relative;
+        height: 185px;
+      }
+    header > a > img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 185px;
+        padding-top: 10px;
+       
+      }
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    header > nav > ul >li{
+        padding-top: 110px;
+        margin-left: 45px;
+        margin-right: 35px;
+      }
+    
+    .col-lg-6 {
+        --num: calc(12 / 6);
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+      }
+    .col-lg-4 {
+        --num: calc(12 / 4);
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+      }
+     }
+  
+  
+    @media (max-width: 767px) {
+      header {
+          position: relative;
+          height: 180px;
+          padding-top: 20px;
+        }
+      header > a> img{
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          padding-top: 0px;
+  
+      }
+      header > .container nav {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          
+        }
+      header > nav > ul > li{
+          padding-top: 100px;
+          margin-left: 15px;
+          margin-right: 40px;
+      }
+  
+      .col-12 {
+          --num: calc(12 / 12);
+          width: calc(100% / var(--num) - 30px);
+          margin: 0px 15px 40px 15px;
+        }
+    .col-6 {
+            --num: calc(12 / 6);
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+          }
+      }
+  
+  
+  @media (min-width: 768px) {
+      header {
+        position: relative;
+        height: 185px;
+      }
+      header > nav >  a > img {
+        position: absolute;
+        left: 50%;
+        top: 95%;
+        transform: translateX(-50%);
+        line-height: 185px;
+        padding-top: 10px;
+      }
+      header nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: -40%;
+      }
+      header > nav > ul >li{
+        padding-top: 110px;
+        margin-left: 45px;
+        margin-right: 35px;
+      }
+      .col-md-6 {
+        --num: calc(12 / 6);
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+      }
+      .col-md-4 {
+        --num: calc(12 / 4);
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+      }
+   
+  }
+  

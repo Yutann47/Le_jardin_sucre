@@ -33,6 +33,7 @@ header> nav > ul > li > a{
     font-size: 14px;
     list-style: 60px;
 }
+
 /* header end */
 
 .container>.row{
@@ -41,6 +42,16 @@ header> nav > ul > li > a{
 main p{
   align-items: center;
 }
+#top_relative{
+  position: relative;
+}
+#top_absolute1{
+  position: absolute;
+  top: 220%;
+
+}
+
+.container>.row>
 
 /* /////////////////// */
 /* 圖片文字樣式 */
@@ -73,11 +84,25 @@ main p{
   .container p{
     padding: 20px;
   }
-
+#bgc{
+  background-color: #8fb9b4;
+}
 h3{
   padding: 20px;
-  
+  font-size: 24px;
 }
+#p-margin-top100{
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+#p-margin-top60{
+  margin-top: 30px;
+}
+#img-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ///////////////////// */
 /* footer start */
 /* ///////////////////// */
@@ -199,6 +224,7 @@ footer {
       width: calc(100% / var(--num) - 30px);
       margin: 0px 15px 40px 15px;
     }
+ 
 }
 
 
