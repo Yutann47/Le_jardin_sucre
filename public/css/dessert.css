@@ -49,6 +49,8 @@ header> nav > ul > li > a{
     display: flex;
     flex-wrap: wrap;
 }
+
+
 .col-3 {
     --num: calc(12 / 3);
     width: calc(100% / var(--num) - 30px);
@@ -57,13 +59,27 @@ header> nav > ul > li > a{
 #center{
 align-items: center;
 }
+
+
 .container-1000{
     margin-top: 100px;
 }
-.container-1000 p{
-    margin-top: 20px;
+main>.container-1000 h3{
+  margin-top: 10px;
 }
-
+main>.container-1000 p{
+  margin-top: 10px;
+}
+.big{
+  height: 400px;
+  overflow: hidden;
+}
+.big img{
+  transition: all,.5s;
+}
+.big:hover img{
+  transform: scale(1.2);
+}
   footer {
     margin-top: 100px;
     background-color: #8fb9b4;
@@ -92,6 +108,7 @@ align-items: center;
     header {
         position: relative;
         height: 185px;
+       
       }
     header > a > img {
         position: absolute;
@@ -99,6 +116,7 @@ align-items: center;
         transform: translateX(-50%);
         line-height: 185px;
         padding-top: 10px;
+        
        
       }
     header nav {
@@ -128,24 +146,26 @@ align-items: center;
     @media (max-width: 767px) {
       header {
           position: relative;
-          height: 180px;
+          height: 185px;
           padding-top: 20px;
         }
-      header > a> img{
+      header img{
           position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          padding-top: 0px;
-  
+         top: 20%;
+         left: 50%;
+        transform: translateX(-50%);
+      
       }
       header > .container nav {
           width: 100%;
           display: flex;
           justify-content: center;
+         
           
         }
       header > nav > ul > li{
-          padding-top: 100px;
+        display: none;
+          padding-top: 10px;
           margin-left: 15px;
           margin-right: 40px;
       }
