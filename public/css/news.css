@@ -1,79 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 100%;
-    margin: auto;
-    /* max-width: 1440px; */
-  }
-.container-1000{
-    max-width: 1000px;
-    margin: auto;
-}  
+  width: 100%;
+  margin: auto;
+  /* max-width: 1440px; */
+}
+
+.container-1000 {
+  max-width: 1000px;
+  margin: auto;
+}
 
 /* header start */
-
-header> nav > ul{
-    list-style-type: none;
-    display: flex;
-    padding: 20px 0 20px 0;
+header > .row > .container > ul {
+  list-style-type: none;
+  display: flex;
+  padding: 20px 0 20px 0;
 }
 
-header> nav > ul > li{
-    margin-right: 20px;
+header > .row > .container > ul > li {
+  margin-right: 20px;
 }
 
-header> nav > ul > li > a{
-    display: block;
-    text-decoration: none;
-    color: rgb(53, 112, 104);
-    font-size: 14px;
-    list-style: 60px;
+header > .row > .container > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: #357068;
+  font-size: 14px;
+  list-style: 60px;
 }
 
 /* header end */
-
 .img-fluid {
-    width: 100%;
-  }
+  width: 100%;
+}
+
 .text-center {
-    text-align: center;
-  }
+  text-align: center;
+}
+
 .text-justify {
-    text-align: justify;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
+  text-align: justify;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .col-3 {
-    --num: calc(12 / 3);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+  --num: calc(12 / 3);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
 }
 
-
-
-
-  footer {
-    margin-top: 100px;
-    background-color: #8fb9b4;
-    padding: 40px 0 40px 0;
-  }
-  footer>.container>.row>.col-3>dt{
-      color: #fff;
-      font-size: 16px;
-      
-  }
-  dd{
-    color: rgb(255, 255, 255);
+/* ///////////////////// */
+/* footer start */
+/* ///////////////////// */
+footer {
+  margin-top: 100px;
+  background-color: #8fb9b4;
+  padding: 40px 0 40px 0;
 }
-  
-  dd > a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
 
+footer > .container > .row > .col-3 > dt {
+  color: #fff;
+  font-size: 16px;
+}
+
+dd {
+  color: white;
+}
+
+dd > a {
+  text-decoration: none;
+  color: white;
+}
