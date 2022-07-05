@@ -89,7 +89,7 @@ h3{
     top: 0;
     left: 0;
     transform: translateY(-120%);
-    background-color: rgb(187, 149, 149);
+    /* background-color: rgb(187, 149, 149); */
     padding-top: 20%;
     background-size: 100%;
     background-repeat: no-repeat;
