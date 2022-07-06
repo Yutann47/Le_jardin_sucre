@@ -25,10 +25,90 @@
         </div>
     </header>
 
-    <div class="banner">
-        <img src="" alt="">
-        <img src="" alt="">
+    <div class="container-1230">
+        <div class="lg-relative">
+            <img class="img-fluid" src="public/images/7-1-1.png" alt="">
+            <img class="img-fluid lg-absolute" src="" alt="">
+        </div>
     </div>
+
+
+    <main>
+        <div class="row container-1230">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img class="none" src="public/images/7-2.png" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h3>About us</h3>
+                <div class="question-content">
+                    <div class="question">
+                        Q1. 需要事先訂位嗎?
+                        <div class="icon-arrow">▽</div>
+                    </div>
+                    <div class="answer"><p>為了滿足顧客多方面的需求，並將訂位服務做到最好，我們開放一個月內的訂位，建議您可以直接撥打服務專線，即可保留您想要的甜點時間喔！</p></div>
+                </div>
+                <div class="question-content">
+                    <div class="question">
+                        Q2. 請問有最低消費嗎?
+                        <div class="icon-arrow">▽</div>
+                    </div>
+                    <div class="answer"><p>jardin sucré有最低消費門檻，每人最低需消費乙份甜點。</p> </div>
+                </div>
+                <div class="question-content">
+                    <div class="question">
+                        Q3. 請問消費可以刷卡嗎?
+                        <div class="icon-arrow">▽</div>
+                    </div>
+                    <div class="answer"><p>Le jardin sucré皆有提供刷卡服務，此外也接受line pay付款喔!</p></div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 col-12">
+                <h3>About the desserts</h3>
+                <div class="question-content">
+                    <div class="question">
+                        Q4. 請問甜點有提供外帶服務嗎?
+                        <div class="icon-arrow">▽</div>
+                    </div>
+                    <div class="answer"><p>Le jardin sucré提供外帶服務喔，所有餐點皆可外帶。</p></div>
+                </div>
+                <div class="question-content">
+                    <div class="question">
+                        Q5. 甜點的保存期限與食用方法?
+                        <div class="icon-arrow">▽</div>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            甜點皆請於2-3天內享用完畢喔。
+                            <br>
+                            <br>
+                            1.瑪德蓮: 屬常溫蛋糕，留在密封容器中，可保存三天，冷藏則可保存一個星期。
+                            <br>
+                            <br>
+                            2.檸檬塔 熔岩巧克力 蒙布朗 馬卡龍 千層酥 : 如果沒有要馬上吃需要冷藏喔，甜點的最佳品嚐溫度是5度，離開冷藏以後5-10分鐘吃，口感最好。
+                            <br>
+                            <br>
+                            3.可麗露: 請置於冷凍保存，冷凍後想要食用，只要放於室內等待5-10分鐘即可，仍會帶有脆軟口感。
+                        </p>
+                </div>
+                </div>
+                <div class="question-content">
+                    <div class="question">
+                        Q6. 請問甜點退換貨問題?
+                        <div class="icon-arrow">▽</div>
+                    </div>
+                    <div class="answer"><p>甜點因保存期限及衛生考量，一經拆封食用或非運送過程失溫導致甜點變質者，恕無法接受退換貨喔!</p></div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-12">
+                <img class="none" src="public/images/7-3.png" alt="">
+            </div>
+           
+           
+        </div>
+    </main>
 
 
     <footer>
@@ -63,5 +143,21 @@
 
     </footer>
     
+
+
+
+    <script src="https://kit.fontawesome.com/b3df4de4f7.js" crossorigin="anonymous"></script>
+    <!-- jquery主程式 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- 自定義 -->
+    <script>
+        $('.question-content').on('click', function(){
+            $(this).find('.answer').stop().slideToggle()
+            $(this).toggleClass('active')
+            $(this).siblings().removeClass('active')
+
+        })//.question-content end
+        
+    </script>
 </body>
 </html>

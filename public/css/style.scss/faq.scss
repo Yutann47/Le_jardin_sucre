@@ -8,8 +8,8 @@
     margin: auto;
     /* max-width: 1440px; */
   }
-.container-1000{
-    max-width: 1000px;
+.container-1230{
+    max-width: 1230px;
     margin: auto;
 }  
 
@@ -56,6 +56,50 @@ header> .row > .container > ul > li > a{
     margin: 0px 15px 40px 15px;
 }
 
+*{
+  box-sizing: border-box;
+}
+.question-content{
+  border-bottom: 1px dashed rgb(53, 112, 104);
+  margin-bottom: 20px;
+  line-height: 20px;
+  padding:10px 40px 10px 10px;
+  cursor: pointer;
+}
+.question-content.active .icon-arrow{
+  transform: rotate(180deg);
+}
+.answer{
+  display: none;
+ padding-right: 10px;
+}
+.question{
+  position: relative;
+  color: rgb(53, 112, 104);
+}
+.icon-arrow{
+  transition: transform .3s;
+  position: absolute;
+  text-align: center;
+  /* background-color: pink; */
+  top: 0;
+  left: 100%;
+}
+h3{
+  color: rgb(53, 112, 104);
+  font-size: 24px;
+  text-align: center;
+  padding:20px 0 10px 0;
+}
+main p{
+  display: block;
+  padding-top: 7px;
+  
+  line-height: 1.5em;
+}
+
+
+
 
 /* ///////////////////// */
 /* footer start */
@@ -77,4 +121,155 @@ footer {
   dd > a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+  }
+
+
+
+
+  
+/* //////////////////////// */
+/* 不同裝置 */
+/* //////////////////////// */
+
+@media (min-width: 1200px) {
+  header {
+      position: relative;
+      height: 185px;
+    }
+  header >.row > a > img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 185px;
+      padding-top: 10px;
+    }
+  header >.row >.container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  header > .row >.container > ul >li{
+      padding-top: 110px;
+      margin-left: 45px;
+      margin-right: 35px;
+    }
+  .icon-menu{
+      display: none;
+    }
+  .lg-relative{
+    position: relative;
+  }
+  .lg-absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .col-lg-6 {
+      --num: calc(12 / 6);
+      width: calc(100% / var(--num) - 30px);
+      margin: 0px 15px 40px 15px;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    header {
+      position: relative;
+      height: 185px;
+    }
+    header > a > img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 185px;
+      padding-top: 10px;
+    }
+    header>.row>.container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    header >.row > .container > ul >li{
+      padding-top: 110px;
+      margin-left: 45px;
+      margin-right: 35px;
+    }
+    .icon-menu{
+      display: none;
+    }
+    .col-md-6 {
+      --num: calc(12 / 6);
+      width: calc(100% / var(--num) - 30px);
+      margin: 0px;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    header {
+        position: relative;
+        height: 130px;
+        padding-top: 20px;
+      }
+    header > a> img{
+        position: absolute;
+        padding-top: 0px;
+
+    }
+    .flex-space-between {
+      justify-content: space-between;
+    }
+
+    .icon-menu {
+      width: 12%;
+      display: block;
+      border: 1px solid rgb(53,112,104);
+      color: rgb(53, 112, 104);
+      line-height: 30px;
+      text-align: center;
+      text-decoration: none;
+      position: absolute;
+      top: 45%;
+      right: 7%;
+     
+    }  
+    header > .row > .container {
+      width: 100%;
+      position: absolute;
+      top: 90%;
+      background-color: rgb(53, 112, 104);
+      z-index: 10;
+     
+    }
+    header > .row > .container > ul {
+    display: flex;
+    flex-wrap: wrap;
+    }  
+    header li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #b5b0b0;
+    line-height: 50px;
+    }
+    header>.row>.container>ul>li>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+      
+    }
+
+    header> .row > .container{
+    display: none;
+    }
+    header> .row > .container.active{
+    display: block;
+    }
+    .col-12 {
+      --num: calc(12 / 12);
+      width: calc(100% / var(--num) - 30px);
+      margin: 0px 15px 40px 15px;
+    }
+    .none{
+      display: none;
+    }
   }

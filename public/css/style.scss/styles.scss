@@ -46,7 +46,7 @@ header> .row > .container > ul > li > a{
   }
 
 #bgc_img{
-    background-image: url("/public/images/vision-10.png");
+    background-image: url("../images/vision-10.png");
 }
 .row {
     display: flex;
@@ -85,16 +85,15 @@ h3{
     content:'';
     position: absolute;
     display: block;
-    width: 100%;
+    width: 150px;
     top: 0;
-    left: 0;
+    left: -12px;
     transform: translateY(-120%);
     // background-color: rgb(90, 71, 71);
-    /* background-color: rgb(187, 149, 149); */
-    padding-top: 20%;
+    padding-top: 35px;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("/public/images/flower.png");
+    background-image: url("../images/flower.png");
   }
 main>.container>.container-1000>a{  
      display: block;
@@ -142,6 +141,11 @@ footer {
     text-decoration: none;
     color: rgb(255, 255, 255);
   }
+
+  
+/* //////////////////////// */
+/* 不同裝置 */
+/* //////////////////////// */
 
   @media (min-width: 1200px) {
     header {
@@ -279,8 +283,9 @@ footer {
     header > .row > .container {
       width: 100%;
       position: absolute;
-      top: 60%;
+      top: 90%;
       background-color: rgb(53, 112, 104);
+      z-index: 10;
      
     }
     header > .row > .container > ul {

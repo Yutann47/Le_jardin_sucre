@@ -87,6 +87,31 @@ main > .container-1000 p {
   transform: scale(1.2);
 }
 
+h3 {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 40px;
+}
+
+h3 > span {
+  position: relative;
+}
+
+h3 > span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 150px;
+  top: 0;
+  left: -25px;
+  transform: translateY(-120%);
+  padding-top: 35px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/flower.png");
+}
+
 footer {
   margin-top: 100px;
   background-color: #8fb9b4;

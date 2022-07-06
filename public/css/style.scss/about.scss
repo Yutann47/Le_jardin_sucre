@@ -112,6 +112,9 @@ h3{
 #p-margin-top60{
   margin-top: 30px;
 }
+.container>.row{
+  align-items: center;
+}
 
 
 /* ///////////////////// */
@@ -230,11 +233,14 @@ header> .row > .container.active{
     display: block;
 }
 
-    .col-12 {
-        --num: calc(12 / 12);
-        width: calc(100% / var(--num) - 30px);
-        margin: 0px 15px 40px 15px;
-      }
+  .col-12 {
+  --num: calc(12 / 12);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+  }
+  .none{
+  display: none;
+  }
     }
 
 

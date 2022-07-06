@@ -123,6 +123,10 @@ h3 {
   margin-top: 30px;
 }
 
+.container > .row {
+  align-items: center;
+}
+
 /* ///////////////////// */
 /* footer start */
 /* ///////////////////// */
@@ -246,6 +250,10 @@ dd > a {
     --num: calc(12 / 12);
     width: calc(100% / var(--num) - 30px);
     margin: 0px 15px 40px 15px;
+  }
+
+  .none {
+    display: none;
   }
 }
 @media (min-width: 768px) {
