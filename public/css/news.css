@@ -81,11 +81,11 @@ main a {
   margin: auto;
   margin-top: 20px;
   text-decoration: none;
-  padding: 10px 0 10px 0;
+  padding: 5px 5px 5px 5px;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   border: 1.5px solid black;
-  width: 130px;
+  width: 100px;
   color: black;
 }
 

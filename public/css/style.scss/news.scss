@@ -45,10 +45,9 @@ header> .row > .container > ul > li > a{
 .text-justify {
     text-align: justify;
   }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 .col-3 {
     --num: calc(12 / 3);
@@ -77,11 +76,11 @@ main a{
     margin: auto;
     margin-top: 20px;
     text-decoration: none;
-    padding: 10px 0 10px 0;
+    padding: 5px 5px 5px 5px;
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     border: 1.5px solid black;
-    width: 130px;
+    width: 100px;
     color: black;
   }
 

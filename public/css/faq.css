@@ -58,6 +58,10 @@ header > .row > .container > ul > li > a {
   margin: 0px 15px 40px 15px;
 }
 
+main > .container-1230 > .col-lg-6 {
+  padding-top: 70px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -68,6 +72,7 @@ header > .row > .container > ul > li > a {
   line-height: 20px;
   padding: 10px 40px 10px 10px;
   cursor: pointer;
+  padding-top: 30px;
 }
 
 .question-content.active .icon-arrow {
