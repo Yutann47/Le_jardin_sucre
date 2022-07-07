@@ -47,6 +47,7 @@ header> .row > .container > ul > li > a{
 
 #bgc_img{
     background-image: url("../images/vision-10.png");
+    
 }
 .row {
     display: flex;
@@ -71,7 +72,9 @@ header> .row > .container > ul > li > a{
 main>.container-1000{
       margin-top: 120px;
   }
-
+main>.container{
+  padding-bottom: 70px;
+}
 h3{
       font-size: 24px;
       text-align: center;

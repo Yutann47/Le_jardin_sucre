@@ -37,6 +37,7 @@ header> .row >.container > ul > li > a{
 
 .img-fluid {
     width: 100%;
+    display: block;
   }
 .text-center {
     text-align: center;
@@ -45,6 +46,13 @@ header> .row >.container > ul > li > a{
     text-align: justify;
   }
 
+#bgc_img{
+  background-image: url("../images/vision-10.png");
+    
+} 
+main{
+  padding-bottom: 70px;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -56,13 +64,16 @@ header> .row >.container > ul > li > a{
     width: calc(100% / var(--num) - 30px);
     margin: 0px 15px 40px 15px;
 }
-
+.container{
+  margin-bottom: 100px;
+}
 .container>.row{
   align-items: center;
 }
 
-.container-1000{
-    margin-top: 100px;
+
+main{
+  padding-top: 50px;
 }
 main>.container-1000 h3{
   margin-top: 10px;
@@ -73,6 +84,7 @@ main>.container-1000 p{
 .big{
   height: 400px;
   overflow: hidden;
+  position: relative;
 }
 .big img{
   transition: all,.5s;
@@ -80,12 +92,26 @@ main>.container-1000 p{
 .big:hover img{
   transform: scale(1.2);
 }
+h4 {
+  text-align: center;
+  line-height: 60px;
+  background-color: rgba(250, 250, 250, 0.179);
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  bottom: -70px;
+  transition: all, .5s;
+} 
+.container>.container-1000>.row>.col-lg-4>.big:hover h4{
+  bottom: 0;
+}
 
 h3{
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
-  padding-top: 70px;
-  margin-bottom: 40px;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 h3>span{
 position: relative;
@@ -105,7 +131,7 @@ background-repeat: no-repeat;
 background-image: url("../images/flower.png");
 }
   footer {
-    margin-top: 100px;
+    // margin-top: 100px;
     background-color: #8fb9b4;
     padding: 40px 0 40px 0;
   }
@@ -152,17 +178,17 @@ header > .row >.container > ul >li{
   }
 
     
-    .col-lg-6 {
-        --num: calc(12 / 6);
-        width: calc(100% / var(--num) - 30px);
-        margin: 0px 15px 40px 15px;
-      }
-    .col-lg-4 {
-        --num: calc(12 / 4);
-        width: calc(100% / var(--num) - 30px);
-        margin: 0px 15px 40px 15px;
-      }
-     }
+  .col-lg-6 {
+    --num: calc(12 / 6);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+  .col-lg-4 {
+    --num: calc(12 / 4);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+  }
   
   
     @media (max-width: 767px) {
@@ -270,11 +296,10 @@ header > .row >.container > ul >li{
         width: calc(100% / var(--num) - 30px);
         margin: 0px 15px 40px 15px;
       }
-      .col-md-4 {
-        --num: calc(12 / 4);
-        width: calc(100% / var(--num) - 30px);
-        margin: 0px 15px 40px 15px;
-      }
-   
+  .col-md-4 {
+    --num: calc(12 / 4);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+    }
   }
   
