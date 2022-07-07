@@ -35,14 +35,15 @@
                 <p>我們無可自拔地愛上路易十四時代開始的法式甜點。經典法式甜點充滿法國的優雅精緻與浪漫，希望能把這份法式甜點的典雅和迷戀帶給來到糖的花園的你們。</p>
             </div>
    
-            <div class="col-lg-6 col-md-6 col-12">
+            <div class="left-65">
                 <!-- <p>Lorem, ipsum dolor.</p> -->
             </div>
-            <div class="col-lg-6 col-md-6 col-12" id="top_relative" style="text-align: right;">
+            <div class="right-35" id="top_relative" style="text-align: right;">
                 <img class="img-fluid" src="public/images/2-2.png" alt="">
-                <p class="text-center">Le jardin sucré源自於法文，意思是糖的花園。</p>
-                <img  id="top_absolute1" class="none" src="public/images/2-3.png" alt="">
-                <img  id="top_absolute2" class="none" src="public/images/2-4.png" alt="">
+                <h4 id="padtop1">Le jardin sucré</h4>
+                <p class="text-center" id="padtop2">源自於法文，意思是糖的花園。</p>
+                <img  id="top_absolute1" class="none block" src="public/images/2-3.png" alt="">
+                <img  id="top_absolute2" class="none block" src="public/images/2-4.png" alt="">
             </div>
            
            
@@ -107,5 +108,39 @@
 
           </footer>
 
+
+
+
+ <!-- jquery主程式 -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+ <!-- 自定義 -->
+    <script>
+        //  $('.icon-menu').on('click', function(){
+        //     $('#btn-box-switch').fadeToggle()
+        // }) // #btn-box-switch end
+        
+        
+         let btnNavToggle = document.getElementById('btn-nav-toggle')
+         let primaryNavigation = document.getElementById('primary-navigation')
+ 
+ 
+         btnNavToggle.addEventListener('click',openNav)
+         // 函式名稱
+         function openNav(){
+             console.log('點按鈕打開主導覽')
+             if( primaryNavigation.classList.contains('active') == true ){
+                 // 假如主導覽有active類別時執行
+                 primaryNavigation.classList.remove('active')
+                 btnNavToggle.textContent = 'menu'
+             }else{
+                 // 假如主導覽沒有active類別時執行
+                 primaryNavigation.classList.add('active')
+                 btnNavToggle.textContent = 'X'
+ 
+             }// openNav if end
+             
+         } //openNav end
+    </script>
 </body>
 </html>

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le jardin sucré</title>
     <link rel="stylesheet" href="public/css/styles.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- slick theme css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
     <header>
@@ -37,7 +41,7 @@
                 <h3><span>Event</span></h3>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-12">
-                        <a href=""><img class="img-fluid" src="public/images/citron.png" width="500px"  alt=""></a>
+                        <a href=""><img class="img-fluid" src="public/images/event1.png" width="500px"  alt=""></a>
                         <p class="text-center"></p>
                     </div>
                 
@@ -46,44 +50,31 @@
                         <p class="text-center"></p>
                     </div>
                 </div>
-                <div class="container-1000">
-                    <h3><span>The desserts</span></h3>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <a href=""><img class="img-fluid" src="public/images/recette-mont-blanc-dessert 1.png" width="500px"alt=""></a>
-                            <p class="text-center">Mont-blanc</p>
-                            <p class="text-center">蒙布朗</p>
-                        </div>
-                    
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <a href=""><img class="img-fluid" src="public/images/Fondant au chocolat.png" width="500px"alt=""></a>
-                            <p class="text-center">Fondant au chocolat</p>
-                            <p class="text-center">熔岩巧克力</p>
-                        </div>
-                    </div>
+                <h3><span>The desserts</span></h3>
+                
+                <div class="banner"> 
+                        <!-- <div class="row"> -->
+                            <!-- <div class="col-lg-6 col-md-6 col-12"> -->
+                                <img class="img-fluid" src="public/images/recette-mont-blanc-dessert 1.png" alt="">
+                                <!-- <p class="text-center">Mont-blanc</p> -->
+                                <!-- <p class="text-center">蒙布朗</p> -->
+                            <!-- </div> -->
+                        
+                            <!-- <div class="col-lg-6 col-md-6 col-12"> -->
+                                <img class="img-fluid" src="public/images/Fondant au chocolat.png" alt="">
+                                <!-- <p class="text-center">Fondant au chocolat</p> -->
+                                <!-- <p class="text-center">熔岩巧克力</p> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <img class="img-fluid" src="public/images/recette-mont-blanc-dessert 1.png" alt="">
+                        <img class="img-fluid" src="public/images/Fondant au chocolat.png" alt="">
+                        <img class="img-fluid" src="public/images/recette-mont-blanc-dessert 1.png" alt="">
+                        <img class="img-fluid" src="public/images/Fondant au chocolat.png" alt="">
                 </div>
                 <a href="dessert.html">more</a>
             </div>
         </div>
         
-       
-
-    <div>
-        <div>
-        <ing></ing>
-        </div>
-
-        <div>
-        <ing></ing>
-        </div>
-
-        <div>
-        <ing></ing>
-        </div>
-
-        <div>
-        <ing></ing>
-        </div>
     </div>
 
     <div class="container-1000">
@@ -157,7 +148,8 @@
 
  <!-- jquery主程式 -->
  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+<!-- <slick js> -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
  <!-- 自定義 -->
     <script>
         //  $('.icon-menu').on('click', function(){
@@ -185,7 +177,43 @@
              }// openNav if end
              
          } //openNav end
- 
+         
+
+         $('.banner').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+            });
          
     </script>
 </body>

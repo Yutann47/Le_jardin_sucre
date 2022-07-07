@@ -132,58 +132,6 @@ footer {
 /* 不同裝置 */
 /* //////////////////////// */
 
-@media (min-width: 1200px) {
-  header {
-      position: relative;
-      height: 185px;
-    }
-  header > .row > a > img {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      line-height: 185px;
-      padding-top: 10px;
-    }
-  header > .row >.container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-  header > .row >.container > ul >li{
-      padding-top: 110px;
-      margin-left: 45px;
-      margin-right: 35px;
-    }
-  
-  .col-lg-6 {
-      --num: calc(12 / 6);
-      width: calc(100% / var(--num) - 30px);
-      margin: 0px 15px 40px 15px;
-    }
-  
-.container>.row{
-  padding-bottom: 200px;
-}
-#margin_bottom{
-  margin-bottom: 180px;
-}
-
-#top_relative{
-  position: relative;
-}
-#top_absolute1{
-  position: absolute;
-  top: -20%;
-  left: -15%;
-}
-#top_absolute2{
-  position: absolute;
-  top: 30%;
-  left: -35%;
-}
-}
-  
-
   @media (max-width: 767px) {
     header {
         position: relative;
@@ -215,7 +163,8 @@ footer {
     header > .row > .container {
       width: 100%;
       position: absolute;
-      top: 60%;
+      top: 90%;
+      z-index: 10;
       background-color: rgb(53, 112, 104);
      
     }
@@ -250,49 +199,120 @@ header> .row > .container.active{
   .none{
   display: none;
   }
-  }
-
+}
 
 @media (min-width: 768px) {
-    header {
+  header {
+    position: relative;
+    height: 210px;
+  }
+  header > .row > a > img {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+    line-height: 185px;
+    padding-top: 10px;
+  }
+  header .row >.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -40%;
+  }
+
+  header > .row >.container > ul >li{
+    padding-top: 110px;
+    margin-left: 45px;
+    margin-right: 35px;
+  }
+  .icon-menu{
+    display: none;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-md-6 {
+    --num: calc(12 / 6);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+.none{
+  display: none;
+}
+
+}
+
+
+@media (min-width: 1200px) {
+  header {
       position: relative;
-      height: 210px;
+      height: 250px;
     }
-    header > .row > a > img {
+  header > .row > a > img {
       position: absolute;
       left: 50%;
-      top: 35%;
       transform: translateX(-50%);
       line-height: 185px;
       padding-top: 10px;
     }
-    header .row >.container {
+  header > .row >.container {
       width: 100%;
       display: flex;
       justify-content: center;
-      position: absolute;
-      top: -40%;
     }
-
-    header > .row >.container > ul >li{
-      padding-top: 110px;
+  header > .row >.container > ul >li{
+      padding-top: 130px;
       margin-left: 45px;
       margin-right: 35px;
     }
-    .icon-menu{
-      display: none;
-    }
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .col-md-6 {
+  
+  .col-lg-6 {
       --num: calc(12 / 6);
       width: calc(100% / var(--num) - 30px);
       margin: 0px 15px 40px 15px;
     }
-  .none{
-    display: none;
-  }
- 
+  
+.container>.row{
+  padding-bottom: 200px;
 }
+#margin_bottom{
+  margin-bottom: 180px;
+}
+.left-65{
+  width: 65%;
+}
+.right-35{
+  width: 35%;
+}
+#top_relative{
+  position: relative;
+}
+#top_absolute1{
+  position: absolute;
+  top: -15%;
+  left: -30%;
+}
+#top_absolute2{
+  position: absolute;
+  top: 40%;
+  left: -60%;
+}
+.block{
+  display: block;
+}
+#padtop1{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+#padtop2{
+  position: absolute;
+  top: 110%;
+}
+} 
+
+
+

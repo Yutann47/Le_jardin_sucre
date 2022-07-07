@@ -45,7 +45,7 @@
             <div class="col-lg-4 col-md-4 col-12">
                 <div class="big">
                     <img class="img-fluid big" src="public/images/3-2.png"> 
-                    <h4 class="text-center">棕色的鈴聲在月港被輕輕敲響</h>
+                    <h4 class="text-center">棕色的鈴聲在月港被輕輕敲響</h4>
                 </div>    
                 <h3 class="text-center">Canelé 可麗露</h3>
                 <p class="text-center text-justify">可麗露的出現可能介於15至18世紀，Annonciades 修道院的修女們收集了一些從港口掉落的麵粉以及葡萄酒製造商於葡萄酒生產過程中遺留下來的蛋黃，再混入一些港口隨處可得的香草與萊姆酒，烤至外皮焦脆而內部柔軟後便分送給當地經濟困難的民眾。</p>
@@ -157,7 +157,37 @@
 
           </footer>
 
+<!-- jquery主程式 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+<!-- 自定義 -->
+   <script>
+       //  $('.icon-menu').on('click', function(){
+       //     $('#btn-box-switch').fadeToggle()
+       // }) // #btn-box-switch end
+       
+       
+        let btnNavToggle = document.getElementById('btn-nav-toggle')
+        let primaryNavigation = document.getElementById('primary-navigation')
+
+
+        btnNavToggle.addEventListener('click',openNav)
+        // 函式名稱
+        function openNav(){
+            console.log('點按鈕打開主導覽')
+            if( primaryNavigation.classList.contains('active') == true ){
+                // 假如主導覽有active類別時執行
+                primaryNavigation.classList.remove('active')
+                btnNavToggle.textContent = 'menu'
+            }else{
+                // 假如主導覽沒有active類別時執行
+                primaryNavigation.classList.add('active')
+                btnNavToggle.textContent = 'X'
+
+            }// openNav if end
+            
+        } //openNav end
+   </script>
 
     
 </body>

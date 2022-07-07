@@ -129,73 +129,6 @@ main> .container-1000>p{
 /* 不同裝置 */
 /* //////////////////////// */
 
-
-@media (min-width: 1200px) {
-  header {
-      position: relative;
-      height: 185px;
-    }
-  header >.row > a > img {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      line-height: 185px;
-      padding-top: 10px;
-    }
-  header >.row >.container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-  header > .row >.container > ul >li{
-      padding-top: 110px;
-      margin-left: 45px;
-      margin-right: 35px;
-    }
-  .icon-menu{
-      display: none;
-    }
-  
-  .col-lg-6 {
-      --num: calc(12 / 6);
-      width: calc(100% / var(--num) - 30px);
-      margin: 0px;
-    }
-  }
-
-
-  @media (min-width: 768px) {
-    header {
-      position: relative;
-      height: 185px;
-    }
-    header > a > img {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      line-height: 185px;
-      padding-top: 10px;
-    }
-    header>.row>.container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-    header >.row > .container > ul >li{
-      padding-top: 110px;
-      margin-left: 45px;
-      margin-right: 35px;
-    }
-    .icon-menu{
-      display: none;
-    }
-    .col-md-6 {
-      --num: calc(12 / 6);
-      width: calc(100% / var(--num) - 30px);
-      margin: 0px;
-    }
-  }
-
   @media (max-width: 767px) {
     header {
         position: relative;
@@ -271,3 +204,70 @@ main> .container-1000>p{
       margin: 0px 15px 40px 15px;
     }
   }
+
+  @media (min-width: 768px) {
+    header {
+      position: relative;
+      height: 185px;
+    }
+    header > a > img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 185px;
+      padding-top: 10px;
+    }
+    header>.row>.container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    header >.row > .container > ul >li{
+      padding-top: 110px;
+      margin-left: 45px;
+      margin-right: 35px;
+    }
+    .icon-menu{
+      display: none;
+    }
+    .col-md-6 {
+      --num: calc(12 / 6);
+      width: calc(100% / var(--num) - 30px);
+      margin: 0px;
+    }
+  }
+
+
+  @media (min-width: 1200px) {
+    header {
+        position: relative;
+        height: 185px;
+      }
+    header >.row > a > img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 185px;
+        padding-top: 10px;
+      }
+    header >.row >.container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    header > .row >.container > ul >li{
+        padding-top: 110px;
+        margin-left: 45px;
+        margin-right: 35px;
+      }
+    .icon-menu{
+        display: none;
+      }
+    
+    .col-lg-6 {
+        --num: calc(12 / 6);
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px;
+      }
+    }
+  

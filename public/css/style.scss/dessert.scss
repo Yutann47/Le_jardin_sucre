@@ -153,43 +153,6 @@ background-image: url("../images/flower.png");
 /* //////////////////////// */
 /* 不同裝置 */
 /* //////////////////////// */
-
-@media (min-width: 1200px) {
-  header {
-    position: relative;
-    height: 185px;
-  }
-header > .row > a > img {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    line-height: 185px;
-    padding-top: 10px;
-  }
-header > .row >.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-header > .row >.container > ul >li{
-    padding-top: 110px;
-    margin-left: 45px;
-    margin-right: 35px;
-  }
-
-    
-  .col-lg-6 {
-    --num: calc(12 / 6);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
-  }
-  .col-lg-4 {
-    --num: calc(12 / 4);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
-  }
-  }
-  
   
     @media (max-width: 767px) {
       header {
@@ -222,7 +185,8 @@ header > .row >.container > ul >li{
     header > .row > .container {
       width: 100%;
       position: absolute;
-      top: 60%;
+      top: 90%;
+      z-index: 10;
       background-color: rgb(53, 112, 104);
      
     }
@@ -252,7 +216,7 @@ header > .row >.container > ul >li{
       .col-12 {
           --num: calc(12 / 12);
           width: calc(100% / var(--num) - 30px);
-          margin: 0px 15px 40px 15px;
+          margin: 0px 40px 40px 40px;
         }
     .col-6 {
             --num: calc(12 / 6);
@@ -260,7 +224,6 @@ header > .row >.container > ul >li{
             margin: 0px 15px 40px 15px;
           }
       }
-  
   
   @media (min-width: 768px) {
     header {
@@ -302,4 +265,38 @@ header > .row >.container > ul >li{
     margin: 0px 15px 40px 15px;
     }
   }
+  @media (min-width: 1200px) {
+    header {
+      position: relative;
+      height: 250px;
+    }
+  header > .row > a > img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 185px;
+      padding-top: 10px;
+    }
+  header > .row >.container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  header > .row >.container > ul >li{
+      padding-top: 130px;
+      margin-left: 45px;
+      margin-right: 35px;
+    }
   
+      
+    .col-lg-6 {
+      --num: calc(12 / 6);
+      width: calc(100% / var(--num) - 30px);
+      margin: 0px 15px 40px 15px;
+    }
+    .col-lg-4 {
+      --num: calc(12 / 4);
+      width: calc(100% / var(--num) - 30px);
+      margin: 0px 15px 40px 15px;
+    }
+    }
