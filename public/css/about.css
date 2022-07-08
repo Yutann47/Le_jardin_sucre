@@ -63,12 +63,6 @@ header > .row > .container > ul > li > a {
   flex-wrap: wrap;
 }
 
-.col-6 {
-  --num: calc(12 / 6);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
-}
-
 .col-3 {
   --num: calc(12 / 3);
   width: calc(100% / var(--num) - 30px);
@@ -91,7 +85,7 @@ h3 {
 }
 
 h4 {
-  padding: 20px;
+  padding: 5px;
   font-size: 20px;
 }
 
@@ -250,12 +244,28 @@ dd > a {
 
   .col-md-6 {
     --num: calc(12 / 6);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 35px);
+    margin: 0px 20px 40px 15px;
+  }
+
+  .left-65 {
+    width: 65%;
+  }
+
+  .right-35 {
+    width: 35%;
   }
 
   .none {
     display: none;
+  }
+
+  .md-text-none {
+    display: none;
+  }
+
+  .row {
+    padding-bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
@@ -306,17 +316,17 @@ dd > a {
     width: 35%;
   }
 
-  #top_relative {
+  .top_relative {
     position: relative;
   }
 
-  #top_absolute1 {
+  .lg_absolute1 {
     position: absolute;
     top: -15%;
     left: -30%;
   }
 
-  #top_absolute2 {
+  .lg_absolute2 {
     position: absolute;
     top: 40%;
     left: -60%;
@@ -326,14 +336,23 @@ dd > a {
     display: block;
   }
 
-  #padtop1 {
+  .lg_padtop1 {
     position: absolute;
     top: 100%;
-    left: 0%;
+    left: 8%;
   }
 
-  #padtop2 {
+  .lg_padtop2 {
     position: absolute;
     top: 110%;
+    left: 5%;
+  }
+
+  .lg-text-block {
+    display: block;
+  }
+
+  .lg-text-none {
+    display: none;
   }
 }
