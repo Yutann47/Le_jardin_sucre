@@ -195,6 +195,9 @@ header> .row > .container.active{
   .none{
   display: none;
   }
+  .text-none{
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -324,7 +327,7 @@ header> .row > .container.active{
 .lg-text-block{
   display: block;
 }
-.lg-text-none{
+.text-none{
   display: none;
 }
 } 

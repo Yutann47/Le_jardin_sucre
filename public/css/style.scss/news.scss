@@ -81,8 +81,8 @@ h3>span::before{
   background-repeat: no-repeat;
   background-image: url("../images/flower.png");
 }
-.news>p{
-  padding-left: 30px;
+.col-12>p{
+  
   line-height: 2em;
   white-space: pre;
 }
@@ -279,6 +279,7 @@ footer {
   width: calc(100% / var(--num) - 30px);
   margin: 0px 15px 40px 15px;
   }
+ 
   }
 
 @media (min-width: 1200px) {
@@ -322,6 +323,9 @@ footer {
   --num: calc(12 / 4);
   width: calc(100% / var(--num) - 30px);
   margin: 0px 15px 40px 15px;
+  }
+  .col-12>p{
+    padding-left: 30px;
   }
   }
   

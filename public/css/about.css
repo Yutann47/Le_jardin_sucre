@@ -203,6 +203,10 @@ dd > a {
   .none {
     display: none;
   }
+
+  .text-none {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   header {
@@ -352,7 +356,7 @@ dd > a {
     display: block;
   }
 
-  .lg-text-none {
+  .text-none {
     display: none;
   }
 }
