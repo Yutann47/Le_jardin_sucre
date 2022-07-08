@@ -72,7 +72,7 @@ h3>span::before{
   position: absolute;
   display: block;
   width: 150px;
-  top: -150%;
+  top: -170%;
   left: 50%;
   transform: translateX(-50%);
   // background-color: rgb(90, 71, 71);
@@ -122,6 +122,11 @@ h4 {
   background-image: url("../images/vision-10.png");
   padding-top: 80px;
   padding-bottom: 150px;
+}
+h3{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 

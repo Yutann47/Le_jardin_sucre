@@ -134,6 +134,10 @@ main > .container > .container-1000 > .banner > img {
   color: aqua;
 }
 
+.banner img {
+  margin: 10px;
+}
+
 .big {
   height: 300px;
   overflow: hidden;
